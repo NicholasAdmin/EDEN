@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Eden
+Comment=Eden P2P Cryptocurrency
+Comment[fr]=Eden, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Eden, eşten eşe kriptografik sanal para birimi
+Exec=eden-qt %u
+Terminal=false
+Type=Application
+Icon=eden128
+MimeType=x-scheme-handler/eden;
+Categories=Office;Finance;

@@ -1,0 +1,22 @@
+[Unit]
+Description=Eden's distributed currency daemon
+After=network.target
+
+[Service]
+User=eden
+Group=eden
+
+Type=forking
+PIDFile=/var/lib/edend/edend.pid
+ExecStart=/usr/bin/edend -daemon -pid=/var/lib/edend/edend.pid \
+-conf=/etc/eden/eden.conf -datadir=/var/lib/edend -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

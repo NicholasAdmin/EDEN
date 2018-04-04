@@ -1,0 +1,68 @@
+Source: eden
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@eden.org>
+Uploaders: Holger Schinzel <holger@eden.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.eden.org/
+Vcs-Git: git://github.com/edenpay/eden.git
+Vcs-Browser: https://github.com/edenpay/eden
+
+Package: edend
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Eden is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Eden uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Eden
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, edend, and the CLI tool
+ eden-cli to interact with the daemon.
+
+Package: eden-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Eden is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Eden uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Eden
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Eden-Qt, a GUI for Eden based on Qt.
+
+Package: eden-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Eden is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Eden uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Eden
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides eden-tx, a command-line transaction creation
+ tool which can be used without a eden daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.
