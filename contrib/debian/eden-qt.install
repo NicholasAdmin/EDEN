@@ -1,0 +1,6 @@
+usr/local/bin/eden-qt usr/bin
+share/pixmaps/eden32.xpm usr/share/pixmaps
+share/pixmaps/eden16.xpm usr/share/pixmaps
+share/pixmaps/eden128.png usr/share/pixmaps
+debian/eden-qt.desktop usr/share/applications
+debian/eden-qt.protocol usr/share/kde4/services/
