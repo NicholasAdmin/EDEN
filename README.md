@@ -7,7 +7,7 @@ payments to anyone, anywhere in the world. Eden uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
 are carried out collectively by the network.
 
-X16S Whitepaper: https://mega.nz/#!YQAFkCyA!MSwNKd6vHGWHdTOMnnGqiznMlbIulTLqvu8LS_kJAQE 
+X16S Whitepaper: https://mega.nz/#!ZEF3lKTC!C6-eOfPTVfhxIyoT_r8yHbz5OmuU_UL8aVo6izFh0R0 
 __________________________________________________________________________
 ### Eden Specifications
 
