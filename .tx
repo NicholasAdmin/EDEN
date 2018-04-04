@@ -1,7 +1,0 @@
-[main]
-host = https://www.transifex.com
-
-[eden.qt-translation-012x]
-file_filter = src/qt/locale/eden_<lang>.ts
-source_file = src/qt/locale/eden_en.ts
-source_lang = en
